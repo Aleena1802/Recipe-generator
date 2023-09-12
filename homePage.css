@@ -2,8 +2,17 @@ body{
     height:100%;
     width: 100%;
     background-position: center;
-    margin-left: 50%;
     background-size: cover;
+}
+
+#heading{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:bolder;
+    font-size: 80px;
+    background-image: url(images/leaves.jpg);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: white;
 }
 
 .sidebar{
@@ -16,10 +25,12 @@ body{
     background-color: aqua;
     font-size: 55px;
     padding:60px;
+    text-align: center;
 }
 
 span{
     display: none;
+    padding-top:80px;
 }
 
 .sidebar:hover{
