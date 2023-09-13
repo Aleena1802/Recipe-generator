@@ -3,16 +3,22 @@ body{
     width: 100%;
     background-position: center;
     background-size: cover;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:normal;
+    background-color: #2d2d30;
+    color: #ffffff; 
+
 }
 
 #heading{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 0px;
     font-weight:bolder;
-    font-size: 80px;
-    background-image: url(images/leaves.jpg);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-color: white;
+    font-size: 150px;
+   color: goldenrod;
+    border-color: wheat;
+    background-blend-mode:hard-light;
+    
 }
 
 .sidebar{
@@ -25,12 +31,21 @@ body{
     background-color: aqua;
     font-size: 55px;
     padding:60px;
-    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(images/leaves2.jpg);
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: blur(17px);
+    --webkit-backdrop-filter: blur(17px);
 }
 
 span{
     display: none;
-    padding-top:80px;
+    padding-top:120px;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+
 }
 
 .sidebar:hover{
