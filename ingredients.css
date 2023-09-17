@@ -1,7 +1,15 @@
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:normal;
+    background-color: #2d2d30;
+    color: #ffffff; 
+}
+
 input[type="radio"] {
-    width: 30px; /* Set your desired width */
-    height: 30px; /* Set your desired height */ 
-    margin-left: 200px;
+    width: 45px; /* Set your desired width */
+    height: 45px; /* Set your desired height */ 
+    margin-left: 100px;
+
    
 }
 .ingredients{
@@ -10,13 +18,19 @@ input[type="radio"] {
 }
 
 h1{
-    font-size: 150px;
+    font-size: 120px;
     text-align: center;
     margin-top: 0px;
     margin-bottom: 200px;
+    color: goldenrod;
 }
 
 h2{
  text-align: center;
  margin-bottom: 100px;
+ color: goldenrod;
+}
+
+hr{
+    box-shadow: 2px 2px 15px 1px goldenrod
 }

@@ -1,73 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ingredients</title>
-    <link rel="stylesheet" href="ingredients.css">
-</head>
-<body>
-    <h1>Search your recipes by ingredients</h1>
-    <div class="ingredients">
-        <div class="proteins">
-        <h2>Proteins</h2>
-        <input type="radio"  value="chicken"/>Chicken
-        <input type="radio"  value="Beef"/>Beef
-        <input type="radio"  value="Fish"/>Fish
-        <input type="radio"  value="Shrimp"/>Shrimp
-        <input type="radio"  value="Tofu"/>Tofu
-        <input type="radio"  value="Beans"/>Beans
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ingredients</title>
+        <link rel="stylesheet" href="ingredients.css">
+    </head>
+    <body>
+        <h1>Search your recipes by ingredients</h1>
+        <div class="ingredients">
+            <div class="proteins">
+                <h2>Proteins</h2>
+                <input type="radio" value="chicken"/>Chicken
+                <input type="radio" value="Beef"/>Beef
+                <input type="radio" value="Fish"/>Fish
+                <input type="radio" value="Shrimp"/>Shrimp
+                <input type="radio" value="Tofu"/>Tofu
+                <input type="radio" value="Tempeh"/>Tempeh
+                <input type="radio" value="Beans"/>Beans
+            </div>
+
+            <hr>
+
+            <div class="vegetables">
+                <h2>Vegetables</h2>
+                <input type="radio" value="Onions"/>Onions
+                <input type="radio" value="Garlic"/>Garlic
+                <input type="radio" value="Bell peppers"/>Bell peppers
+                <input type="radio" value="Tomatoes"/>Tomatoes
+                <input type="radio" value="Carrots"/>Carrots
+                <input type="radio" value="Celery"/>Celery
+                <input type="radio" value="Mushrooms"/>Mushrooms
+                <input type="radio" value="Zucchini"/>Zucchini
+                <input type="radio" value="Spinach"/>Spinach
+                <input type="radio" value="Broccoli"/>Broccoli
+                <input type="radio" value="Cauliflower"/>Cauliflower
+                <input type="radio" value="Green beans"/>Green beans
+            </div>
+
+            <hr>
+
+            <div class="spices">
+                <h2>Spices</h2>
+                <input type="radio" value="Salt"/>Salt
+                <input type="radio" value="Black pepper"/>Black pepper
+                <input type="radio" value="Paprika"/>Paprika
+                <input type="radio" value="Cumin"/>Cumin
+                <input type="radio" value="Oregano"/>Oregano
+                <input type="radio" value="Basil"/>Basil
+                <input type="radio" value="Thyme"/>Thyme
+                <input type="radio" value="Rosemary"/>Rosemary
+                <input type="radio" value="Parsley"/>Parsley
+                <input type="radio" value="Chili powder"/>Chili powder
+                <input type="radio" value="Cayenne pepper"/>Cayenne pepper
+                <input type="radio" value="Coriander"/>Coriander
+            </div>
+
+            <hr>
+
+            <div class="oils">
+                <h2>Oils</h2>
+                <input type="radio" value="Oliveoil"/>Olive oil
+                <input type="radio" value="Butter"/>Butter
+                <input type="radio" value="Vegoil"/>Vegetable oil
+                <input type="radio" value="Coconutoil"/>Coconut oil
+                <input type="radio" value="Lard"/>Lard
+            </div>
+
+            <hr>
+
+            <div class="grains">
+                <h2>Grains</h2>
+                <input type="radio" value="Rice"/>Rice
+                <input type="radio" value="Pasta"/>Pasta
+                <input type="radio" value="Bread"/>Bread
+                <input type="radio" value="Flour"/>Flour
+                <input type="radio" value="Potatoes"/>Potatoes
+                <input type="radio" value="Quinoa"/>Quinoa
+                <input type="radio" value="Oats"/>Oats
+                <input type="radio" value="Cornmeal"/>Cornmeal
+            </div>
+
+            <hr>
+
+            <div class="dairy">
+                <h2>Dairy and Non-Dairy</h2>
+                <input type="radio" value="Milk"/>Milk
+                <input type="radio" value="Cream"/>Cream
+                <input type="radio" value="Cheese"/>Cheese (e.g., cheddar, mozzarella)
+                <input type="radio" value="Yogurt"/>Yogurt
+                <input type="radio" value="Sour cream"/>Sour cream
+                <input type="radio" value="Almond milk"/>Almond milk
+                <input type="radio" value="Coconut milk"/>Coconut milk
+            </div>
+
+            <hr>
+
+            <div class="sweeteners">
+                <h2>Sweeteners</h2>
+                <input type="radio" value="Sugar"/>Sugar
+                <input type="radio" value="Brown sugar"/>Brown sugar
+                <input type="radio" value="Honey"/>Honey
+                <input type="radio" value="Maple syrup"/>Maple syrup
+                <input type="radio" value="Agave nectar"/>Agave nectar
+            </div>
+
+            <hr>
+
+            <div class="sauces">
+                <h2>Condiments and Sauces</h2>
+                <input type="radio" value="Ketchup"/>Ketchup
+                <input type="radio" value="Mustard"/>Mustard
+                <input type="radio" value="Soy sauce"/>Soy sauce
+                <input type="radio" value="Worcestershire sauce"/>Worcestershire sauce
+                <input type="radio" value="Hot sauce"/>Hot sauce
+                <input type="radio" value="Barbecue sauce"/>Barbecue sauce
+                <input type="radio" value="Vinegar"/>Vinegar (e.g., balsamic, white wine)
+                <input type="radio" value="Mayonnaise"/>Mayonnaise
+            </div>
+
+            <hr>
+
+            <div class="nuts">
+                <h2>Nuts and Seeds</h2>
+                <input type="radio" value="Almonds"/>Almonds
+                <input type="radio" value="Walnuts"/>Walnuts
+                <input type="radio" value="Sunflower seeds"/>Sunflower seeds
+                <input type="radio" value="Pumpkin seeds"/>Pumpkin seeds
+            </div>
+
+            <hr>
+
+            <div class="miscellaneous">
+                <h2>Miscellaneous</h2>
+                <input type="radio" value="Eggs"/>Eggs
+                <input type="radio" value="Baking powder"/>Baking powder
+                <input type="radio" value="Baking soda"/>Baking soda
+                <input type="radio" value="Vanilla extract"/>Vanilla extract
+                <input type="radio" value="Chocolate chips"/>Chocolate chips
+                <input type="radio" value="Food coloring"/>Food coloring
+            </div>
+
+
         </div>
 
-        <hr>
-
-        <div class="vegetables">
-        <h2>Vegetables</h2>
-        <input type="radio"  value="Onions"/>Onions
-        <input type="radio"  value="Garlic"/>Garlic
-        <input type="radio"  value="Bellpeppers"/>Bell Pepper
-        <input type="radio"  value="Tomatoes"/>Tomatoes
-        <input type="radio"  value="Carrots"/>Carrots
-        <input type="radio"  value="Celery"/>Celery
-        </div>
-
-        <hr>
-
-        <div class="spices">
-        <h2>Spices</h2>
-        <input type="radio"  value="Salt"/>Salt
-        <input type="radio"  value="Pepper"/>Pepper
-        <input type="radio"  value="Paprika"/>Paprika
-        <input type="radio"  value="Cumin"/>Cumin
-        <input type="radio"  value="Thyme"/>Thyme
-        <input type="radio"  value="Oregano"/>Oregano
-        </div>
-
-        <hr>
-
-        <div class="oils">
-        <h2>Oils</h2>
-        <input type="radio"  value="Oliveoil"/>Olive oil
-        <input type="radio"  value="Butter"/>Butter
-        <input type="radio"  value="Vegoil"/>Vegetable oil
-        <input type="radio"  value="Coconutoil"/>Coconut oil
-        <input type="radio"  value="Lard"/>Lard
-        </div>
-
-        <hr>
-
-        <div class="grains">
-        <h2>Grains</h2>
-        <input type="radio"  value="Rice"/>Rice
-        <input type="radio"  value="Pasta"/>Pasta
-        <input type="radio"  value="Bread"/>Bread
-        <input type="radio"  value="Flour"/>Flour
-        <input type="radio"  value="Potatoes"/>Potatoes
-        <input type="radio"  value="Oats"/>Oats
-        </div>
-
-
-    </div>
-    
-</body>
+    </body>
 </html>
