@@ -10,15 +10,14 @@
 <body>
     <h1 id="heading">Recipe generator</h1>
     <aside class="sidebar">
-        <div class="cuisines">
-            <b>Cuisines</b>
+        <div class="menu">
+            <b>Recipes</b>
             <div class="items">
-                <span class="Indian">Indian</span>
-                <span class="Mediterranean">Mediterranean</span>
-                <span class="Mexican">Mexican</span>
-                <span class="Chinese">Chinese</span>
-                <span class="LatinAmerican">Latin American</span>
-                <span class="Cajun">Cajun</span>
+                <span class="ingredients">Ingredients</span>
+                <span class="nutrition">Nutrition</span>
+                <span class="diet">Diet</span>
+                <span class="intolerances">Intolerances</span>
+                <span class="Cuisines">Cuisines</span>
             </div>
         </div>
     </aside>
@@ -44,6 +43,21 @@
     </div>
 </body>
 <script>
+const paragraph = document.querySelector('section');
+function handleScroll() {
+  const scrollY = window.scrollY;
+  if (scrollY > 100) {
+    paragraph.classList.add('active');
+  } else {
+    paragraph.classList.remove('active');
+  }
+}
+    window.addEventListener('scroll', handleScroll);
+
+// Trigger the animation if the paragraph is already in view when the page loads
+window.addEventListener('DOMContentLoaded', () => {
+  handleScroll();
+});
     
 </script>
 </html>
