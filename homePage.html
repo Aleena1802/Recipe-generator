@@ -13,11 +13,11 @@
         <div class="menu">
             <b>Recipes</b>
             <div class="items">
-                <span class="ingredients">Ingredients</span>
-                <span class="nutrition">Nutrition</span>
-                <span class="diet">Diet</span>
-                <span class="intolerances">Intolerances</span>
-                <span class="Cuisines">Cuisines</span>
+                <span id="ingredients" >Ingredients</span>
+                <span id="nutrition">Nutrition</span>
+                <span id="diet" >Diet</span>
+                <span id="intolerances" >Intolerances</span>
+                <span id="cuisines" >Cuisines</span>
             </div>
         </div>
     </aside>
@@ -42,22 +42,5 @@
     </div>
     </div>
 </body>
-<script>
-const paragraph = document.querySelector('section');
-function handleScroll() {
-  const scrollY = window.scrollY;
-  if (scrollY > 100) {
-    paragraph.classList.add('active');
-  } else {
-    paragraph.classList.remove('active');
-  }
-}
-    window.addEventListener('scroll', handleScroll);
-
-// Trigger the animation if the paragraph is already in view when the page loads
-window.addEventListener('DOMContentLoaded', () => {
-  handleScroll();
-});
-    
-</script>
+<script type="text/javascript" src="homePage.js"></script>
 </html>
