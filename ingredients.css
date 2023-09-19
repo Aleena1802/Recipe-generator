@@ -5,12 +5,12 @@ body{
     color: #ffffff; 
 }
 
-input[type="radio"] {
+input[type="checkbox"] {
     width: 45px; /* Set your desired width */
     height: 45px; /* Set your desired height */ 
     margin-left: 100px;
-
-   
+    margin-bottom: 100px;  
+    
 }
 .ingredients{
     font-size: 60px;
@@ -33,4 +33,10 @@ h2{
 
 hr{
     box-shadow: 2px 2px 15px 1px goldenrod
+}
+
+.ingredients>div>div{
+display: flex;
+flex-direction: row;
+
 }
