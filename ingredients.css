@@ -35,8 +35,11 @@ hr{
     box-shadow: 2px 2px 15px 1px goldenrod
 }
 
-.ingredients>div>div{
-display: flex;
-flex-direction: row;
-
-}
+.ingredients .proteins > div  {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Align items vertically in the center */
+  }
+  .ingredients .proteins input[type="checkbox"] {
+    margin-right: 10px; /* Add some spacing between checkboxes */
+  }  
