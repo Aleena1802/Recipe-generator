@@ -3,19 +3,10 @@ body{
     font-weight:normal;
     background-color: #2d2d30;
     color: #ffffff; 
+    font-size: 80px;
 }
 
-input[type="checkbox"] {
-    width: 45px; /* Set your desired width */
-    height: 45px; /* Set your desired height */ 
-    margin-left: 100px;
-    margin-bottom: 100px;  
-    
-}
-.ingredients{
-    font-size: 60px;
-    display:block;
-}
+
 
 h1{
     font-size: 120px;
@@ -26,30 +17,68 @@ h1{
 }
 
 h2{
- text-align: center;
+ 
  margin-bottom: 100px;
  color: goldenrod;
 }
 
-hr{
-    box-shadow: 2px 2px 15px 1px goldenrod
+.ingredients {
+          
+   
+
 }
 
-/*
-.ingredients>div  {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    -ms-flex-align:end;
-    width: 3000px;
-    background-color:wheat;
-    justify-content: space-around;
-    height: 300px;
-  }
- */
+input[type="checkbox"]{
+  width: 40px;
+  height: 40px;
+}
 
- .ingredients {
-    display: flex;
-    background-color: beige;
-    
+.ingredients>div{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap:nowrap;
+  justify-content: space-around;
+
+  margin-bottom: 50px;
+}
+
+.ingredients>div>div{
+  width: 40%;
+ 
+}
+
+.proteins{
+  flex-wrap:wrap;
+}
+
+.ingredients .vegetables {
+  
+  display: flex;
+  flex-direction: row;
+
+}
+
+.ingredients .spices {
+  
+  display: flex;
+  flex-direction: row;
+
+}
+
+.ingredients .sauces {
+  
+  display: flex;
+  flex-direction: row;
+
+}
+
+.vegetables .div1{
+  width: 50%;
+  height:100%;       
  }
+
+.vegetables .div2{
+  width: 50%;
+  height: 100%;
+}
