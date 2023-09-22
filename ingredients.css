@@ -22,11 +22,14 @@ h2{
  color: goldenrod;
 }
 
-.ingredients {
-          
-   
-
+.ingredients>div> div {
+  border: 5px solid goldenrod;
+  border-radius: 50px;
+  padding: 100px;
+  box-shadow: -3px 3px 15px 2px goldenrod, 3px -3px 15px 2px goldenrod;
 }
+
+
 
 input[type="checkbox"]{
   width: 40px;
