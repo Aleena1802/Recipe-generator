@@ -1,5 +1,6 @@
 .container>div{
    width: 30%;
+   margin: 1.55%;
    height: 800px;
    background-color: pink;
    display: inline-flex;
