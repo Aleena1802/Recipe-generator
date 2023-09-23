@@ -29,7 +29,9 @@ h2{
   box-shadow: -3px 3px 15px 2px goldenrod, 3px -3px 15px 2px goldenrod;
 }
 
-
+.ingredients>div>div>div:hover{
+  color: goldenrod;
+}
 
 input[type="checkbox"]{
   width: 40px;
@@ -84,4 +86,30 @@ input[type="checkbox"]{
 .vegetables .div2{
   width: 50%;
   height: 100%;
+}
+
+button{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 700px;
+  height: 200px;
+  font-size: 80px;
+  background-color: transparent;
+  border: 5px solid goldenrod;
+  color: white;
+  padding: 20px;
+  box-shadow: -2px 2px 15px 2px goldenrod, 2px -2px 15px 2px goldenrod;
+}
+
+button:hover{
+  font-size: 85px;
+  text-shadow:0px 5px 20px goldenrod;
+  box-shadow: -5px 5px 15px 5px goldenrod, 5px -5px 15px 5px goldenrod;
+
+}
+
+#button{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
