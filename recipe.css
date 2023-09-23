@@ -1,0 +1,8 @@
+.container>div{
+   width: 30%;
+   height: 800px;
+   background-color: pink;
+   display: inline-flex;
+   flex-wrap:wrap;
+    
+}

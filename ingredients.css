@@ -30,6 +30,9 @@ h2{
 }
 
 .ingredients>div>div>div:hover{
+  color: goldenrod; 
+}
+.ingredients>div>div>div>div:hover{
   color: goldenrod;
 }
 
