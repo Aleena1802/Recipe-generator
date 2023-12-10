@@ -26,6 +26,7 @@ function fetchdata(ingredients) {
     .then(responses => {
       // Extract the data you need from each response
       const recipes = responses.map(response => response.data.map(recipe => recipe.title));
+    
       const images = responses.map(response => response.data.map(pic => pic.image));
 
       return {recipes, images };
@@ -51,7 +52,7 @@ app.post('/formdata', (req, res) => {
     });
 });
 
-const port = 3000;
+const port = 5000;
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
