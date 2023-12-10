@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <link rel="stylesheet" href="recipe.css">
+</head>
+<body>
+    <h1>Recipes</h1>
+    <% for(let i=0; i<images.length; i++){ %>
+        <div>
+
+        <h1><%= recipes[i] %></h1>
+        <% console.log("recipes:" + recipes[i]) %>
+        <img src="<%= images[i] %>">
+        </div>
+        <% } %>
+    
+    
+</body>
+<script type="text/javascript" src="form2.mjs"></script>
+
+</html>
