@@ -1,13 +1,23 @@
 #div{
    width: 30%;
    margin: 1.55%;
-   height: 800px;
+   height: 450px;
    background-color: pink;
    display: inline-flex;
    flex-wrap:wrap;
-    
+   justify-content: center;
+   border-radius: 10px;
+   padding-bottom: 10px;
 }
 
 body{
    background-color: aliceblue;
+   text-align: center;
+}
+
+
+#div img{
+   height: 300px;
+   width: 300px;
+   border-radius: 13px;
 }
