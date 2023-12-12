@@ -2,27 +2,30 @@
    width: 30%;
    margin: 1.55%;
    height: 450px;
-   background-color: pink;
    display: inline-flex;
    flex-wrap:wrap;
    justify-content: center;
    border-radius: 10px;
    padding-bottom: 10px;
+   background-color: #252525;
+   box-shadow: -3px 3px 15px 2px goldenrod, 3px -3px 15px 2px goldenrod;
 }
 
 body{
-   background-color: aliceblue;
    text-align: center;
    font-family:Verdana, Geneva, Tahoma, sans-serif;
    font-weight:normal;
    background-color: #2d2d30;
    color: #ffffff; 
-   font-size: 13px;
+   font-size: 12px;
 }
 
+#heading{
+   font-size: xx-large;
+}
 
 #div img{
-   height: 300px;
+   height: 250px;
    width: 300px;
    border-radius: 13px;
 }
