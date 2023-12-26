@@ -8,12 +8,12 @@
 </head>
 <body>
     <h1 id="heading">Recipes</h1>
-    <% for(let i=0; i<images.length; i++){ %>
+    <% for(let i=0; i<responses.length; i++){ %>
         <div id="div">
 
-        <h1><%= recipes[i] %></h1>
+        <h1><%= responses[i].title %></h1>
         <% console.log("recipes:" + recipes[i]) %>
-        <img src="<%= images[i] %>">
+        <img src="<%= responses[i].image %>">
         </div>
         <% } %>
     

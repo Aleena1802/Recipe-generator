@@ -53,7 +53,7 @@ app.post('/formdata', (req, res) => {
   fetchdata(encodedIngredients)
     .then(data => {
     const { responses } = data; //extracting responses from the data object
-    res.render('form2', { responses: responses.flat() });
+    res.render('recipe.ejs', { responses: responses.flat() });
   })
     .catch(error => {
       res.status(500).send('Error fetching data');
