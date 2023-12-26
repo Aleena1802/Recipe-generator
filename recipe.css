@@ -1,0 +1,56 @@
+#title{
+    text-align: center;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+#prep{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#servings{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#prep>div{
+    margin-top: 35px;
+}
+
+#servings>div{
+    margin-top: 35px;
+}
+
+#icon{
+    width: 50px;
+    height: 50px;
+}
+
+#description{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#ingredients{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 40%;
+    border-right: 1px solid black;
+    padding-right: 45px;
+}
+#steps{
+    width: 55%;
+}
