@@ -13,7 +13,7 @@ app.use(express.static(path.join(__dirname)));
 
 function fetchdata(ingredients) {
     const apiKey = 'c8fe12a4c0e0441596e2c6a1c0b5967a';
-    
+
     // Create an array of promises for each ingredient
   const promises = ingredients.map(ingredient =>
     fetch(`https://api.spoonacular.com/recipes/findByIngredients?apiKey=${apiKey}&ingredients=${ingredient}`, {
@@ -37,17 +37,13 @@ function fetchdata(ingredients) {
   
   // Use Promise.all to wait for all promises to be resolved
   return Promise.all(promises)
-    .then(responses => {
-      // Extract the data you need from each response
-      const recipes = responses.map(response => response.data.map(recipe => recipe.title));
-      const images = responses.map(response => response.data.map(pic => pic.image));
-
-      return {recipes, images };
-    })
-    .catch(error => {
-      console.error(error);
-      throw error; // Propagate the error to the caller
-    });
+      .then(responses => { 
+        return { responses };
+      })
+      .catch(error => {
+          console.error(error);
+          throw error; // Propagate the error to the caller
+      });
 }
 
 app.post('/formdata', (req, res) => {
@@ -56,9 +52,8 @@ app.post('/formdata', (req, res) => {
 
   fetchdata(encodedIngredients)
     .then(data => {
-    const { recipes, images } = data;
-    console.log('Images:', images.flat()); // Log the images array to the console
-    res.render('recipe', { recipes: recipes.flat(), images: images.flat() });
+    const { responses } = data; //extracting responses from the data object
+    res.render('form2', { responses: responses.flat() });
   })
     .catch(error => {
       res.status(500).send('Error fetching data');
