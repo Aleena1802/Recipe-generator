@@ -9,16 +9,21 @@
 <body>
     <h1 id="heading">Recipes</h1>
     <% for(let i=0; i<responses.length; i++){ %>
-        <div id="div">
+        <div id="div" onclick="take('<%= responses[i].id %>')" >
 
         <h1><%= responses[i].title %></h1>
-        <% console.log("recipes:" + recipes[i]) %>
+        <% console.log("recipes:" + responses[i].title) %>
         <img src="<%= responses[i].image %>">
         </div>
         <% } %>
     
     
 </body>
-<script type="text/javascript" src="form2.mjs"></script>
+<script>
+function take(recipeId){
+            // Set the window location to form3.html with the recipe title as a query parameter
+            window.location.href = `http://localhost:3000/recipe.html?recipeID=${encodeURIComponent(recipeId)}`;
+        }
+</script>
 
 </html>
