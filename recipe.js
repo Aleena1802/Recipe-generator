@@ -26,14 +26,18 @@ async function fetchData() {
     document.getElementById('source').innerText=data.sourceName;
     for(let i=0; i<data.extendedIngredients.length; i++){
       const elem=document.createElement('span');
-      elem.innerText=data.extendedIngredients[i].name;
-      document.getElementById('ingredients').appendChild(elem);
-    }
+
+        elem.innerText=data.extendedIngredients[i].measures.metric.amount +' '+ data.extendedIngredients[i].measures.metric.unitShort + "  " + data.extendedIngredients[i].name ;
+        document.getElementById('ingredients').appendChild(elem);
+        console.log(elem);
+
+  }
+
     for(let i=0; i<data.analyzedInstructions.length; i++){
       for(let j=0; j<data.analyzedInstructions[i].steps.length; j++){
       const elem=document.createElement('li');
       elem.innerText=data.analyzedInstructions[i].steps[j].step;
-      console.log(elem);
+      //console.log(elem);
       document.getElementById('ol').appendChild(elem);
       }
   }
