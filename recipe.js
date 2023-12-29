@@ -24,6 +24,7 @@ async function fetchData() {
     document.getElementById('serve').innerText=data.servings;
     document.getElementById('health').innerText=data.healthScore;
     document.getElementById('source').innerText=data.sourceName;
+    document.getElementById('summary').innerHTML=data.summary;
     for(let i=0; i<data.extendedIngredients.length; i++){
       const elem=document.createElement('span');
 
